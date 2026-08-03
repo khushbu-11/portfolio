@@ -464,6 +464,12 @@ h3 {
     html{
         font-size:55%;
     }
+    .header-1{
+        position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%; }
 
     .header-1 .container{
         flex-direction: row;

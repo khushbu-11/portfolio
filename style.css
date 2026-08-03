@@ -461,18 +461,18 @@ h3 {
 
 
     .header-1 .container{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap:wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding: 1.5rem 1rem;
         gap: 1.5rem;
     }
 
     /* Logo */
     .logo{
-        width: 120%;
-        margin: 0 auto;
-        margin-left: 20rem;
+        width: auto;
+        margin: 0;
     
     }
 
@@ -487,7 +487,7 @@ h3 {
     }
 
     .header-1 .navbar ul{
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 1.2rem;
@@ -704,5 +704,38 @@ li a{
     .contact-btn{
         min-width:22rem;
         font-size:1.7rem;
+    }
+}
+.menu-checkbox {
+    display: none;
+}
+
+/* Hamburger icon: desktop pe hidden by default */
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 20;
+}
+
+.hamburger-icon span {
+    width: 2.5rem;
+    height: 0.3rem;
+    background: #1B2A49;
+    border-radius: 2px;
+}
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: flex;
+    }
+
+    .header-1 .navbar {
+        width: 100%;
+    }
+
+    .menu-checkbox:checked ~ .navbar ul {
+        display: flex;
     }
 }

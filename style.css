@@ -675,7 +675,7 @@ li a{
     }
 
     .container{
-        max-width: 160rem;
+        max-width: 140rem;
         margin:0 auto;
         padding:8rem 3rem;
     }
@@ -688,10 +688,19 @@ li a{
     }
 
     .logo{
-        width:18rem;
+        width:100%;
         margin:0;
     }
-
+    .main-heading{
+        font-size:1.7rem;
+    }
+    .Projects{
+        font-size:4rem;
+    }
+    .my-portfolio{
+        font-size: 20rem;
+        margin-top: 10rem;
+    }
     .header-1 .navbar ul{
         display:flex;
         gap:3.5rem;
@@ -702,14 +711,7 @@ li a{
         font-size:1.7rem;
     }
 
-    .main-heading{
-        font-size:5.5rem;
-    }
-
-    .Projects{
-        font-size:2.5rem;
-    }
-
+   
     .about-div,
     .Soon{
         max-width:75%;
@@ -737,5 +739,8 @@ li a{
     .contact-btn{
         min-width:22rem;
         font-size:1.7rem;
+    }
+    .footer p{
+        font-size:2rem;
     }
 }

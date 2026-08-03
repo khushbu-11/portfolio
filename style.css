@@ -452,28 +452,25 @@ h3 {
 /* ===========================
    Tablet
 =========================== */
-
 @media (max-width:768px){
 
     html{
         font-size:55%;
     }
 
-
     .header-1 .container{
         flex-direction: row;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         padding: 1.5rem 1rem;
         gap: 1.5rem;
+        position: relative;
     }
 
-    /* Logo */
     .logo{
         width: auto;
         margin: 0;
-    
     }
 
     .icon img{
@@ -481,7 +478,26 @@ h3 {
         display: block;
     }
 
-    /* Navbar */
+    .menu-checkbox{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 1rem;
+        z-index: 20;
+    }
+
+    .hamburger-icon span{
+        width: 2.5rem;
+        height: 0.3rem;
+        background: #1B2A49;
+        border-radius: 2px;
+    }
+
     .header-1 .navbar{
         width: 100%;
     }
@@ -491,6 +507,11 @@ h3 {
         flex-direction: column;
         align-items: center;
         gap: 1.2rem;
+        padding: 1rem 0;
+    }
+
+    .menu-checkbox:checked ~ .navbar ul{
+        display: flex;
     }
 
 li a{
@@ -498,9 +519,6 @@ li a{
         font-weight: 600;
         padding: .5rem 0;
     }
-
-
-    
 
     .main-section{
         padding:6rem 2rem;
@@ -550,6 +568,10 @@ li a{
         display:none;
     }
 }
+
+  
+   
+   
 
 
 /* ===========================
@@ -704,38 +726,5 @@ li a{
     .contact-btn{
         min-width:22rem;
         font-size:1.7rem;
-    }
-}
-.menu-checkbox {
-    display: none;
-}
-
-/* Hamburger icon: desktop pe hidden by default */
-.hamburger-icon {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 1rem;
-    z-index: 20;
-}
-
-.hamburger-icon span {
-    width: 2.5rem;
-    height: 0.3rem;
-    background: #1B2A49;
-    border-radius: 2px;
-}
-@media (max-width: 768px) {
-    .hamburger-icon {
-        display: flex;
-    }
-
-    .header-1 .navbar {
-        width: 100%;
-    }
-
-    .menu-checkbox:checked ~ .navbar ul {
-        display: flex;
     }
 }

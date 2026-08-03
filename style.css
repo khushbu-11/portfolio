@@ -147,7 +147,7 @@ h3 {
     padding: 2rem;
     position: relative;
 }
-
+/* 
 .Common-heading::after {
     position: absolute;
     content: "";
@@ -155,7 +155,7 @@ h3 {
     height: auto;
     border-bottom: .1rem solid #1596b966;
     /* margin-bottom: 3.5rem;
-   margin-left: 18rem; */
+   margin-left: 18rem; 
    bottom: 3.5rem;
    
     opacity: 0.5;
@@ -168,7 +168,7 @@ h3 {
     height: auto;
     border-bottom: .1rem solid #1596b966;
     /* margin-top: 2.3rem;
-    margin-left: 14.2rem; */
+    margin-left: 14.2rem; 
     top: 3.9rem;
     
     opacity: 0.5;
@@ -176,7 +176,7 @@ h3 {
 .Common-heading::before,
 .Common-heading::after{
     width:25%;
-}
+} */
 
 .icon img{ 
     width: 50%;

@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1B2A49;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Urbanist", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: white;
+    --btn-hover-color: #00F5D4;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 9.6rem 2.4rem;
+    margin: 0 auto;
+
+}
+
+.header-1 {
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.header-1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 0 .1rem 0;
+    margin: 0 auto;
+}
+
+.header-1 .navbar ul {
+    display: flex;
+    gap: 1.8rem;
+    text-transform: uppercase;
+}
+
+li a {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: auto;
+    bottom: -0.2rem;
+    left: 0;
+    transition: all .4s linear;
+    border-bottom: .2rem solid var(--btn-hover-color);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+main {
+    position: relative;
+    background: linear-gradient(135deg, #0D1B2A, #1B263B, #000814);
+    min-height: 90vh;
+
+
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 3rem 0;
+
+}
+
+.btn {
+    width: 40%;
+    padding: 1.5rem;
+    color: var(--text-color);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #00F5D4;
+    margin-top: 2rem;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px auto;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main-heading {
+    color: white;
+    font-size: 4rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+p,
+h3 {
+    font-size: 3rem;
+    font-weight: medium;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.4;
+}
+
+h3 {
+    color: var(--btn-hover-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover-color);
+    box-shadow: 0 0 15px #00F5D4, 0 0 30px #00F5D4;
+}
+
+.Common-heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.Common-heading::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: auto;
+    border-bottom: .1rem solid #1596b966;
+    /* margin-bottom: 3.5rem;
+   margin-left: 18rem; */
+   bottom: 3.5rem;
+   
+    opacity: 0.5;
+}
+
+.Common-heading::before {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: auto;
+    border-bottom: .1rem solid #1596b966;
+    /* margin-top: 2.3rem;
+    margin-left: 14.2rem; */
+    top: 3.9rem;
+    
+    opacity: 0.5;
+}
+.Common-heading::before,
+.Common-heading::after{
+    width:25%;
+}
+
+.icon img{ 
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    
+
+}
+
+
+
+.grid-two--cols {
+    gap: 1.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Projects {
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: start;
+    padding: 2rem;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 70%;
+    margin: 0 auto;
+    height: 60vh;
+    background: #243B55;
+}
+.name{
+    color: #FFD700 ;
+    font-weight: 700;
+}
+
+.about-div:hover {
+    box-shadow: 0 4px 20px rgba(0, 198, 255, 0.2);
+}
+
+.About-section {
+    background: #1B2A49;
+    color: var(--text-color);
+    padding: 5rem 0;
+}
+
+
+    
+    
+
+.My-skills{
+    background: #1B2A49;
+    color: var(--text-color);
+    
+}
+
+
+.grid-four--cols{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    display: grid;
+     justify-content: center;
+    justify-items: center;
+}
+.skill-logo i{
+    font-size: 8rem;
+    
+}
+
+
+.our-skills{
+    background: #243B55;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 70%;
+    min-height: auto;
+    place-items: center;
+    padding: 3.2rem;
+    border-radius: 1rem;
+    
+    
+    
+
+    
+}
+.My-skills .container{
+    padding: 3.2rem;
+}
+.our-skills:hover{
+     box-shadow: 0 4px 20px rgba(0, 198, 255, 0.2);
+     /* transform: translateY(-10px);
+     transition: 0.3s; */
+}
+.skills{
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.start-project{
+     background:#1B2A49;
+     color: var(--text-color);
+}
+.project-1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.Coming-soon{
+    color: #00F5D4;
+}
+.Soon{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 70%;
+    margin: 0 auto;
+    min-height:   auto;
+    background: #243B55;
+    text-align: center;
+    border-radius: 1rem;
+}
+.rocket-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    border: 2px solid rgb(99, 230, 190);
+     border-radius: 50%;
+     margin-top: 2.5rem;
+}
+  .rocket-icon i {
+     font-size: 7.5rem;
+     padding: 3rem;
+    display: flex;
+     justify-content: center;
+     align-items: center;}
+.heading h1{
+    font-size: 2.5rem;
+    line-height: 1;
+}
+.heading p{
+    font-size: 1.8rem;
+}
+.heading{
+    padding: 1rem 3rem;
+}
+.grid-three--cols{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+    
+}
+.learn i{
+    font-size: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #00F5D4;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .card-title{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: left;
+    }
+    .learning h3{
+        font-size: 2rem;
+        color: #52f4df
+    }
+    .start-project .container{
+    padding: 3rem 2.4rem;
+}
+ .learn i{
+    transition: all .3s linear;
+
+    &:hover{
+        transform: rotate(360deg);
+         box-shadow: 0 0 15px #00F5D4, 0 0 30px #00F5D4;
+         }
+}
+.rocket-icon i{
+    transition: all .3s linear;
+
+    &:hover{
+        transform: rotate(360deg);
+    }
+}
+.project-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.github-btn,
+.contact-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    min-width: 19rem;
+    padding: 1.2rem 2rem;
+    border: 2px solid #6EE7B7;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    margin-bottom: 2rem;
+    }
+
+.github-btn:hover,
+.contact-btn:hover{
+    background: #6EE7B7;
+    color: #0f172a;
+}
+.footer{
+    background:#1B2A49;
+    margin: 0;
+    color:white;
+    text-align:center;
+    padding:2rem 1rem;
+    font-size:1.5rem;
+    margin-bottom:3rem;
+    
+}
+.footer p{
+    color:white;
+    font-size:1.5rem;
+    margin:0;
+}
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1024px){
+
+    html{
+        font-size:56.25%;
+    }
+
+    .container{
+        padding:7rem 2rem;
+    }
+
+    .about-div,
+    .Soon{
+        max-width:90%;
+    }
+
+    .grid-four--cols{
+        grid-template-columns:repeat(2,1fr);
+        gap:2rem;
+    }
+
+    .Common-heading::before,
+    .Common-heading::after{
+        display:none;
+    }
+}
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+    html{
+        font-size:55%;
+    }
+
+
+    .header-1 .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    /* Logo */
+    .logo{
+        width: 120%;
+        margin: 0 auto;
+        margin-left: 20rem;
+    
+    }
+
+    .icon img{
+        width: 100%;
+        display: block;
+    }
+
+    /* Navbar */
+    .header-1 .navbar{
+        width: 100%;
+    }
+
+    .header-1 .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+li a{
+        font-size: 1.7rem;
+        font-weight: 600;
+        padding: .5rem 0;
+    }
+
+
+    
+
+    .main-section{
+        padding:6rem 2rem;
+    }
+
+    .grid-two--cols{
+        grid-template-columns:1fr;
+        gap:4rem;
+    }
+
+    .grid-three--cols{
+        grid-template-columns:1fr;
+        row-gap:3rem;
+    }
+
+    .grid-four--cols{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-div,
+    .Soon{
+        max-width:95%;
+        height:auto;
+        padding:3rem 2rem;
+    }
+
+    .icon img{
+        width:70%;
+    }
+
+    .btn{
+        width:70%;
+    }
+
+    .project-btn{
+        flex-direction:column;
+    }
+
+    .github-btn,
+    .contact-btn{
+        width:100%;
+        max-width:28rem;
+    }
+
+    .Common-heading::before,
+    .Common-heading::after{
+        display:none;
+    }
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:576px){
+
+    html{
+        font-size:50%;
+    }
+
+    .header-1 .navbar ul{
+        grid-template-columns:1fr;
+    }
+
+    .main-heading{
+        font-size:3.5rem;
+    }
+
+    .Projects{
+        font-size:1.8rem;
+        text-align:center;
+    }
+
+    .rocket-icon i{
+        font-size:5rem;
+        padding:2rem;
+    }
+
+    .icon img{
+        width:90%;
+    }
+
+    .grid-four--cols{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:90%;
+    }
+
+}
+
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width:400px){
+
+    html{
+        font-size:47%;
+    }
+
+    .container{
+        padding:2rem 1.5rem;
+    }
+
+    .main-heading{
+        font-size:3rem;
+    }
+
+    .heading h1{
+        font-size:2rem;
+    }
+
+    .heading p{
+        font-size:1.6rem;
+    }
+
+    .Projects{
+        font-size:1.6rem;
+    }
+
+    .github-btn,
+    .contact-btn{
+        min-width:100%;
+    }
+
+}
+/* ===========================
+   Large Desktop (1440px+)
+=========================== */
+
+@media (min-width:1440px){
+
+    html{
+        font-size:62.5%;
+    }
+
+    .container{
+        max-width:140rem;
+        margin:0 auto;
+        padding:8rem 3rem;
+    }
+
+    .header-1 .container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:1.5rem 3rem;
+    }
+
+    .logo{
+        width:18rem;
+        margin:0;
+    }
+
+    .header-1 .navbar ul{
+        display:flex;
+        gap:3.5rem;
+        align-items:center;
+    }
+
+    .header-1 .navbar ul li a{
+        font-size:1.7rem;
+    }
+
+    .main-heading{
+        font-size:5.5rem;
+    }
+
+    .Projects{
+        font-size:2.5rem;
+    }
+
+    .about-div,
+    .Soon{
+        max-width:75%;
+    }
+
+    .icon img{
+        width:60%;
+    }
+
+    .grid-four--cols{
+        grid-template-columns:repeat(4,1fr);
+        gap:3rem;
+    }
+
+    .grid-three--cols{
+        grid-template-columns:repeat(3,1fr);
+        gap:4rem;
+    }
+
+    .project-btn{
+        gap:2rem;
+    }
+
+    .github-btn,
+    .contact-btn{
+        min-width:22rem;
+        font-size:1.7rem;
+    }
+}
